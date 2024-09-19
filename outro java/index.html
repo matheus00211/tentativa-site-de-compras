@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Compras</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+
+        <h1>Vamos às compras?</h1>
+
+        <!-- Formulário para inserir o nome e o valor do produto -->
+        <div class="formulario">
+            <input type="text" id="produto" placeholder="Nome do produto">
+            <input type="number" id="valor" placeholder="Valor do produto (R$)">
+        </div>
+
+        <!-- Botão para Inserir Produto -->
+        <button id="adicionar">Inserir Produto</button>
+        <!-- Botão para visualizar a tabela -->
+        <button id="visualizarTabela">Visualizar Tabela</button>
+      
+        <!-- Tabela que será gerada dinamicamente -->
+        <table id="tabelaProdutos" class="oculto">
+
+            <thead>
+                <tr> <!-- Inserir uma linha na tabela-->
+                    <th>Produto</th> <!-- Cabeçalho da tabela -->
+                    <th>Valor (R$)</th> <!-- Cabecalho da tabela, coluna dois-->
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- Inicia o corpo da tabel -->
+
+                <!-- As linhas de produtos serão inseridas aqui-->
+
+            </tbody>
+
+            <tfoot> <!-- Inicio do footer da tabela -->
+                <tr>
+                    <td>Total: </td>
+                    <td id="total">R$ 0,00</td> <!-- Inseri uma célula-->
+                </tr>
+            </tfoot>
+
+        </table>
+        <!-- Botão para limpar a tabela -->
+         <button id="imprimirTabela">Limpar Tabela</button>
+    </div>
+
+    <script src="./java/script.js"></script>
+
+</body>
+</html>

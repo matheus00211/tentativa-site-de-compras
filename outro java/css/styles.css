@@ -1,0 +1,92 @@
+/* Resetar as configs do navegador */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define estilo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estiliza o contêiner central */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos campos de input e botões */
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(7, 70, 7);
+}
+
+/* Estilo da lista de erros */  
+
+.errors {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Estilo da tabela de resultados */
+
+.results {
+    margin-top: 20px;
+}
+
+table caption {
+    font-weight: bold;
+    text-align: left;
+}
+
+
+thead th{
+    background-color: #810caf;
+    color: #f8efef;
+   padding: 10px;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Oculta elementos inicialmente */
+.oculto {
+    display: none;
+}
